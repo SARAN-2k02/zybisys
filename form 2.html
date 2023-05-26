@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Form </title>
+<style>
+div,fieldset{
+padding : 20px;
+}
+body{
+  background-image: url('ning.jpg') ;
+  
+}
+</style>
+</head>
+<body>
+<!--<body style="background-color:lightgrey">-->
+
+<h3>   </h3>
+<form> 
+<fieldset>
+<legend><b> CONTACT DETAILS : </b> </legend>
+<div>
+
+<label for="name" ><b>FIRSTNAME : </b></label>
+<input type="text" id="name" 
+ name="name" required pattern="{A-Za-z]+"title="Give the Proper name (Alphabet)">
+</div>
+<div>
+<label for="name" ><b>LAST NAME : </b> </label>
+<input type="text" id="name" 
+ name="name" required pattern="{A-Za-z]+"title="Give the Proper name (Alphabet)">
+  </div>
+
+<div>
+<label for="mail" ><b>EMAIL : </b> </label>
+<input type="Email" id="mail" name="mail"
+required>
+</div>
+<br>
+
+<div>
+<label for="dob" ><b>DATE OF BIRTH : </b> </label>
+<input type="date" id="dob" name="dob"
+required>
+</div>
+
+
+<div>
+<label for="age" ><b>AGE : </b> </label>
+<input type="number" 
+   id="Age" 
+   name="age"
+  required
+   min="17"
+  max="30">
+</div>
+<div>
+<label for="address"> <b> ADDRESS : </b></label>
+<textarea id="address"name="address"
+      minlength="10"
+      maxlength="20">
+</textarea>
+</div>
+                    
+<div>
+<label for="time">Choose the time: </label>
+<input id="time" type="time" name="time" ></div>
+  <div>
+<h1>Select Courses : </h1>
+
+  <input type="checkbox" id="course1" name="course1" value="subject">
+  <label for="course1"> COMPUTER SCIENCE </label><br>
+
+<input type="checkbox" id="course2" name="course2" value="subject">
+  <label for="course2"> COMMERCE </label><br>
+
+<input type="checkbox" id="course3" name="course3" value="subject">
+  <label for="course3"> MATHS </label><br>
+
+<input type="checkbox" id="course4" name="course4" value="subject">
+  <label for="course4"> MICROBIOLOGY </label><br>
+
+<br>
+<label for="phone">Enter your phone number:</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]+" 
+     minlength="10"
+      maxlength="10">
+
+<br>
+<h2> Select Your Subject : </h2>
+  
+<input type="radio" id="computer science" name="subject" value="COMPUTER SCIENCE">
+<label for="computer science">COMPUTER SCIENCE</label><br>
+<input type="radio" id="maths" name="subject" value="MATHS">
+<label for="maths" >MATHS</label><br>
+<input type="radio" id="microbiology" name="subject" value="MICROBIOLOGY">
+<label for="microbiology">MICROBIOLOGY</label><br>
+
+<br>
+
+<h2> Select Gender : </h2>
+<label> GENDER</label>
+<select>
+<option value="male">MALE</option>
+<option value="female">FEMALE</option>
+<option value="others">OTHERS</option>
+
+</select>
+<br>
+
+<div>
+<input type="submit"
+            id="submit"
+            name="submit">
+</div>
+</fieldset>
+
+</form>
+</body>
+</html>
