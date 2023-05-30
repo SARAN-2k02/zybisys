@@ -1,0 +1,27 @@
+body{
+
+    
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+a:haver{
+    color: red;
+}
+a:active{
+    color: green;
+}
+a:visited
+{
+    color: yellow;
+}
+
+.d1 li{
+    padding-bottom: 4px;
+    border-bottom: red 6px double;
+}
+.d1 ul{
+    list-style: none;
+}
