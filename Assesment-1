@@ -1,4 +1,4 @@
-// Two Sum Nums
+// 1.Two Sum Nums
 
 /**
  * @param {number[]} nums
@@ -20,3 +20,43 @@ var twoSum = function(nums, target) {
     }
     
 }; 
+
+// 2.Find 1st and Last position
+
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var searchRange = function(nums, target) {
+    nums=[5,7,7,8,8,10]
+    for(i=0; i<nums.length; i++){
+        for(j=1; i<nums.length-1;j--){
+            
+            if(a[i]-nums.length==target){
+                return[i,j]
+            }
+            else if(a[j]-nums.lenght==target){
+                return[nums.length-j]
+            }
+                
+        } 
+        }
+    } 
+
+// 3. Missign Positive number
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var firstMissingPositive = function(nums) {
+    if(nums[1]-nums[0]==target){
+        return(nums=2)
+    }
+    else(nums[0]-nums[2]){
+        return(nums=2)
+        console.log("the missign term is:"+  nums)
+    }
+    
+};
