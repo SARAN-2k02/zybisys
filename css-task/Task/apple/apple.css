@@ -1,0 +1,169 @@
+body {
+  margin-top: 0;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  padding-left: 40px;
+  margin-right: 0px;
+  margin-left: 0;
+  margin-right: 0;
+}
+#image {
+  width: 15px;
+  margin-left: 30px;
+  border: white;
+}
+header nav {
+  background-color: #4a3f41;
+  padding: 10px;
+  padding-left: 100px;
+  max-width: auto;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+#ads {
+  text-align: center;
+  font-family: sans-serif;
+  opacity: 80%;
+  font-size: 14px;
+}
+section {
+  background-color: black;
+}
+div {
+  justify-content: center;
+}
+div video {
+  margin-left: 400px;
+  padding-top: 40px;
+  height: 300px;
+}
+div p {
+  color: white;
+  font-size: 106.25%;
+  font-weight: 600;
+  font-family: Georgia, serif;
+}
+div a {
+  font-size: 106.25%;
+  font-weight: 400;
+  font-family: sans-serif;
+  color: blue;
+  text-decoration: none;
+}
+.main_content {
+  padding-top: 30px;
+}
+#text_1 {
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+#text_2 {
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  padding-top: 0px;
+}
+#text_3 {
+  color: aliceblue;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+#text_4 {
+  color: black;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+#horizontal_iphone {
+  padding-top: -240px;
+  height: 900px;
+}
+
+#watch_logo {
+  margin-left: 50px;
+}
+
+#series-8 {
+  width: 300px;
+  padding-bottom: 90px;
+}
+/*.main_content_4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  grid-auto-rows: 600px;
+}
+.main_content_4 img {
+  width: 100%;
+  height: 100%;
+}*/
+#offer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 3px solid rgb(23, 21, 21);
+}
+
+.offer-1 {
+  border: 2px solid black;
+  margin: 5px;
+  background-color: black;
+}
+#qoute-2 {
+  color: #453d3d;
+}
+.offer-3 {
+  background-color: black;
+}
+.chip {
+  margin-top: 4%;
+}
+#qoute-4 {
+  color: #453d3d;
+}
+#qoute-5 {
+  color: blue;
+}
+
+.container-foot {
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+}
+.M2 {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: grey;
+  padding-left: 8px;
+}

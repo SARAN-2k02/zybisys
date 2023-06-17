@@ -1,0 +1,50 @@
+let studentsDT = [];
+
+function studentsDetails(name, email, age, phone, degree) {
+  var student = {
+    name,
+    email,
+    age,
+    phone,
+    degree,
+  };
+
+  studentsDT.push(student);
+}
+studentsDetails("Saran", "saran2k@gmail.com", 26, 9360504873, "IT");
+studentsDetails("Gulaam", "gulam2k@gmail.com", 21, 8364726531, "B.com");
+studentsDetails("Ajet", "jet2k@gmail.com", 29, 8364726531, "CSE");
+studentsDetails("Arun", "arun2k@gmail.com", 19, 8364726531, "EEE");
+studentsDetails("Ganesh", "Ganesh2k@gmail.com", 18, 8356478931, "ECE");
+
+console.log(studentsDT);
+ console.log('**************************************************')
+ 
+ function delStudent(email){
+   let deleting=studentsDT.filter(function(obj){
+
+     return obj.email !=email
+     
+   })
+     console.log(deleting);
+ }
+ delStudent("jet2k@gmail.com")
+ 
+ console.log('**************************************************')
+ 
+ function findstudent(email){
+   let finding=studentsDT.some(function(obj){
+     return obj.email === email
+   })
+   console.log(finding);
+ }
+ findstudent("saran2k@gmail.com");
+ 
+ function findAge(age){
+   let findingAge=studentsDT.filter(function(obj){
+     return obj.age>=age 
+   })
+   console.log(findingAge)
+ }
+ findAge(20)
+ 

@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="name"></label>
+    <input type="text" name="name" id="name" placeholder="Enter a name">
+    <input type="submit" id="submit" value="Click Me" onclick="insert()">
+    <ul id="list"></ul>
+    <script>
+        let input = document.getElementById("name");
+        let btn = document.getElementById("submit");
+
+        function loader(bool) {
+            if (bool == true) {
+                btn.disabled = true;
+                btn.value = "loading";
+            }
+            else {
+                btn.disabled = false;
+                btn.value = "Add Response";
+            }
+        }
+
+        function trigger(data) {
+            loader(true)
+            console.log("over");
+            return new Promise(function (resolve, response) {
+                setTimeout(function () {
+                    if (data.length <= 10) {
+                        resolve(data)
+                    }
+                    else {
+                        response("please enter less than 10 digit");
+                    }
+                    loader(false)
+                }, 2000)
+
+            })
+        }
+
+        function insert() {
+            console.log("saran")
+            let val = input.value;
+            trigger(val).then(function (response) {
+                let ui = document.getElementById("list");
+                let li = document.createElement("li");
+                li.innerHTML = response;
+                ui.appendChild(li);
+
+            }).catch(function (response) {
+                alert(response)
+            })
+        }
+    </script>
+</body>
+
+</html>

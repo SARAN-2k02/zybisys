@@ -1,0 +1,24 @@
+let studentsDT= []
+
+function studentsDetails(Name,Email,Age,Phone,Degree){
+  
+   var student={
+    Name,
+    Email,
+    Age,
+    Phone,
+    Degree
+  }
+  
+  studentsDT.push(student)
+}
+studentsDetails("Saran","saran2k@gmail.com",20,9360504873,"IT");
+studentsDetails("Gulaam","gulam2k@gmail.com",21,8364726531,"B.com");
+studentsDetails("ajet","jet2k@gmail.com",21,9876243567,"CSE");
+studentsDetails("Arun","Arun2k@gmail.com",22,923443567,"Mech");
+studentsDetails("Ganesh","ganesh2k@gmail.com",21,9475689365,"Bio-Tech");
+console.log(studentsDT)
+
+
+console.log("******************************************************************")
+

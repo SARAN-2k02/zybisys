@@ -1,0 +1,15 @@
+.watch-task {
+  border: 2px solid red;
+  background-color: rgb(30, 132, 132);
+  padding: 20px;
+  margin-top: 25%;
+}
+#mainWatch {
+  margin-left: 40%;
+}
+
+#start-btn,
+#stop-btn,
+#pause-btn {
+  width: 25%;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+
+<body>
+
+
+
+    // let reachA = new Promise((resolve, reject) => {
+    // const reached = true
+    // if (reached)
+    // setTimeout(resolve, 3000, "saran is reached");
+    // else
+    // reject("saran is not reached")
+    // })
+
+    // let reachB = new Promise((resolve, reject) => {
+    // const reached = true
+    // if (reached)
+    // setTimeout(resolve, 4000, "Karan is reached");
+    // else
+    // reject("Karan is not reached")
+    // })
+
+    // let reachC = new Promise((resolve, reject) => {
+    // const reached = false
+    // if (reached)
+    // setTimeout(resolve, 1000, "John is reached");
+    // else
+    // reject("John is not reached")
+    // })
+
+    // Promise.any([reachA, reachB, reachC])
+    // .then((message) => console.log(message))
+    // .catch((message) => console.log(message))
+    <script>
+
+
+        // Error Handling
+
+        // try {
+        //     num = prompt("enter the number")
+        //     if (isNaN(num))
+        //         throw "enter a number correctly"
+        //     if (num === '')
+        //         throw "num is not defined"
+        //     console.log(num * 2)
+        // }
+        // catch (error) {
+        //     console.log(error)
+        // }
+        // finally {
+        //     console.log("ok bye")
+        // }
+
+
+
+        //Aync Await
+
+        let reachA = new Promise((resolve, reject) => {
+            const reached = false
+            if (reached)
+                setTimeout(resolve, 1000, "saran is reached");
+            else
+                reject("saran is not reached")
+        })
+
+
+        // try catch laium vachu use paniklam  (.then .catch ku bathila)
+
+        async function sat() {
+            try{
+            console.log('hi')
+            result = await reachA
+            console.log(result)
+            console.log("byee")
+            }
+            catch(error){
+                console.log(error)
+            }
+        }
+        sat()
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+body {
+  background-color: #dcdcdc;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  list-style: none;
+  font-size: x-large;
+  color: rgb(9, 9, 39);
+  border-color: red;
+  border-style: ridge;
+}
+li {
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+  border-style: outset;
+  border-radius: 50px 0px;
+  border-color: rgb(5, 27, 100);
+}
+.card {
+  background-color: white;
+  width: 250px;
+  padding: 8px;
+  border: 2.5px solid blue;
+  border-radius: 15px;
+  border-top-color: black;
+  border-bottom-color: black;
+  border-left-color: red;
+  margin: 15px;
+}
+h2 {
+  padding: 20px;
+}
+header {
+  font-weight: bolder;
+  background-color: darkolivegreen;
+}
+footer {
+  font-weight: bolder;
+  background-color: darkolivegreen;
+  height: 25px;
+  border-color: red;
+  border-style: ridge;
+  text-align: center;
+}
